@@ -20,5 +20,5 @@ function _x(STR_XPATH) {
     return xnodes;
 }
 
-alert("Watched 6:7");
-$(_x('/html/body/table[2]/tbody/tr/td[1]/div[1]/table[7]/tbody/tr[8]/td[2]')).css('background', 'green');
+localStorage.setItem("x", 8);
+$(_x('/html/body/table[2]/tbody/tr/td[1]/div[1]/table[7]/tbody/tr['+localStorage.getItem("x")+']/td[2]')).css('background', 'green');
